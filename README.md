@@ -63,11 +63,11 @@ python scripts/run_model_1.py --input_path <input_csv_path> --output_predictions
 * tune_hyperparameters: Optional flag to perform hyperparameter tuning.
 
 #### File outputs: 
-  pickle model file
-  raw predictions data with predicted and actual results for the test data
-  shap summary plot (png)
-  confusion matrix (png)
-  list of key metrics used to assess model performance (csv)
+* pickle model file
+* raw predictions data with predicted and actual results for the test data
+* shap summary plot (png)
+* confusion matrix (png)
+* list of key metrics used to assess model performance (csv)
 
 ### run_model_2.py
 This script is designed for a regression task. It uses the XGBoost regressor to predict the total payment of a loan. The main steps include data preprocessing, hyperparameter tuning, model training, prediction, and result analysis.
