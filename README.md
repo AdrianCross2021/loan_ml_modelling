@@ -1,4 +1,4 @@
-**Loan Prediction Model README**
+####Loan Prediction Model README
 This repository contains scripts for building and analyzing machine learning models for loan prediction. The primary goal is to predict whether a loan is likely to be bad based on historical loan data.
 
 **Installation**
