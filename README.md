@@ -19,10 +19,11 @@ conda activate wealthfront
 ## Scripts Overview
 The scripts are designed so the clean_data.py file is run before either run_model_1.py or run_model_2.py are run. analysis_eda.py can be run at any time on a csv file.
 ### analysis_eda.py
-This script performs an exploratory data analysis designed to provide insights into a given dataset. This produces an excel document with 3 sheets where each sheet contains summary data of 
+This script performs an exploratory data analysis designed to provide insights into a given dataset. This produces an excel document with 4 sheets where each sheet contains summary data of 
 * Sheet 1 - all columns with counts of null values
 * Sheet 2 - categorical columns with number of unique values at various percentage thresholds
 * Sheet 3 - numerical columns with a breakdown of the numbers which exist in each column (mean, median, max etc.)
+* Sheet 4 - correlation matrix of all applicable columns
 
 #### Usage:
 ```console
