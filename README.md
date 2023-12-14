@@ -2,11 +2,11 @@
 This repository contains scripts for building and analyzing machine learning models for loan prediction. The primary goal is to predict whether a loan is likely to be bad based on historical loan data.
 
 **Installation**
-To create the environment from the environment.yml file first run
-conda env create -f environment.yml
+To create the environment from the environment.yml file first run:\
+conda env create -f environment.yml\
 
-Then to activate the environment run
-conda activate wealthfront
+Then to activate the environment run\
+conda activate wealthfront\
 
 **Scripts Overview**
 **analysis_eda.py**
