@@ -84,32 +84,6 @@ def run_model(
     logger.debug(f"outputting analyses to {output_analysis_folder} folder")
     analyze_model(predictions, X_test, model, output_analysis_folder, output_predictions_path, output_model_path)
 
-    # Output confusion matrix
-    # conf_matrix = confusion_matrix(predictions["bad_loan_actual"], predictions["bad_loan_predicted"])
-    # logger.debug("Confusion matrix:")
-    # logger.debug(conf_matrix)
-    # plt.figure(figsize=(8, 6))
-    # sns.heatmap(conf_matrix, annot=True, fmt="d", cmap="Blues", cbar=False)
-    # plt.title("Confusion Matrix")
-    # plt.xlabel("Predicted Label")
-    # plt.ylabel("Actual Label")
-    # plt.savefig(os.path.join(output_analysis_folder, "confusion_matrix.png"))
-    # plt.clf()
-    #
-    # # Output shap values
-    # explainer = shap.TreeExplainer(model)
-    # shap_values = explainer.shap_values(X_test)
-    # shap.summary_plot(shap_values, feature_names=X_test.columns, features = X_test, show = False)
-    # plt.savefig(os.path.join(output_analysis_folder, "shap_summary_plot.png"))
-    # plt.clf()
-    # # Output raw data
-    # logger.debug("Outputting model and predictions")
-    # predictions.to_csv(output_predictions_path)
-    #
-    # # Output Model
-    # with open(output_model_path, "wb") as model_file:
-    #     pickle.dump(model, model_file)
-
 def preprocess(df_cleaned: pd.DataFrame):
     """
     Takes a cleaned csv input and performs test-train split, target calculation and one hot encoding
